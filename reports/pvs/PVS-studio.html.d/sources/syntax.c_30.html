@@ -3482,13 +3482,13 @@
 <a name="ln3469">  }</a>
 <a name="ln3470">}</a>
 <a name="ln3471"> </a>
-<a name="ln3472">void syn_maybe_on(void)</a>
+<a name="ln3472">void syn_maybe_enable(void)</a>
 <a name="ln3473">{</a>
 <a name="ln3474">  if (!did_syntax_onoff) {</a>
 <a name="ln3475">    exarg_T ea;</a>
 <a name="ln3476">    ea.arg = (char_u *)&quot;&quot;;</a>
 <a name="ln3477">    ea.skip = false;</a>
-<a name="ln3478">    syn_cmd_onoff(&amp;ea, &quot;syntax&quot;);</a>
+<a name="ln3478">    syn_cmd_enable(&amp;ea, false);</a>
 <a name="ln3479">  }</a>
 <a name="ln3480">}</a>
 <a name="ln3481"> </a>
