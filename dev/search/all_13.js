@@ -1361,7 +1361,7 @@ var searchData=
   ['syn_5fid2name_9670',['syn_id2name',['../syntax_8c.html#a453301a0803cdd006df65350a2a79546',1,'syntax.c']]],
   ['syn_5finit_5fcmdline_5fhighlight_9671',['syn_init_cmdline_highlight',['../syntax_8c.html#a3678dd883c243706bd29456412104654',1,'syntax.c']]],
   ['syn_5fitems_9672',['SYN_ITEMS',['../syntax_8c.html#a3981b10bad2a8bbdf9b57a6a640da814',1,'syntax.c']]],
-  ['syn_5fmaybe_5fon_9673',['syn_maybe_on',['../syntax_8c.html#a47b74d1a5a50a5e5b16b62bfbe8e3ae6',1,'syntax.c']]],
+  ['syn_5fmaybe_5fenable_9673',['syn_maybe_enable',['../syntax_8c.html#a8c291a2bf69385740f075f0b132229e4',1,'syntax.c']]],
   ['syn_5fname2attr_9674',['syn_name2attr',['../syntax_8c.html#abb06ad58af26ce04e5f1eb2c9ea8cd1d',1,'syntax.c']]],
   ['syn_5fname2id_9675',['syn_name2id',['../syntax_8c.html#a964fedfa5690ead36a6a41c4055bb639',1,'syntax.c']]],
   ['syn_5fnamen2id_9676',['syn_namen2id',['../syntax_8c.html#a9577b11f6f03daaef7e40a8df0df36cf',1,'syntax.c']]],
