@@ -932,10 +932,18 @@ vim.call({func}, {...})					*<A NAME="vim.call()"></A><B>vim.call()</B>*
 
 
 vim.cmd({cmd})                                          *<A NAME="vim.cmd()"></A><B>vim.cmd()</B>*
-        Invokes an <A HREF="intro.html#Ex">Ex</A> command (the &quot;<A HREF="cmdline.html#:">:</A>&quot; commands, Vimscript statements).
+        Executes multiple lines of Vimscript at once. It is an alias to
+        |<A HREF="api.html#nvim_exec()">nvim_exec()</A>|, where `output` is set to false. Thus <A HREF="motion.html#it">it</A> works identical
+        to |<A HREF="repeat.html#:source">:source</A>|.
         See also |<A HREF="vimindex.html#ex-cmd-index">ex-cmd-index</A>|.
         Example:
 <B>            vim.cmd('echo 42')</B>
+<B>            vim.cmd([[</B>
+<B>              augroup My_group</B>
+<B>                autocmd!</B>
+<B>                autocmd FileType c setlocal cindent</B>
+<B>              augroup END</B>
+<B>            ]])</B>
 
 
 vim.fn.{func}({...})					*<A NAME="vim.fn"></A><B>vim.fn</B>*
@@ -1497,7 +1505,7 @@ uri_to_fname({uri})                                       *<A NAME="vim.uri_to_f
 
     <footer>
       <div class="container">
-        Generated Sat May  1 05:45:08 UTC 2021 from <a href="https://github.com/neovim/neovim/commit/0150cc41604ebb1b5b5f6920cf4673e541684e75"><code>0150cc4</code></a>.
+        Generated Sun May  2 05:42:02 UTC 2021 from <a href="https://github.com/neovim/neovim/commit/b227cedf82341813514da55baa48511eca4014b0"><code>b227ced</code></a>.
       </div>
     </footer>
   </body>
