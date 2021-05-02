@@ -570,12 +570,22 @@
   <PVS-Studio_Analysis_Log>
     <Level>2</Level>
     <ErrorType>warning</ErrorType>
+    <ErrorCode>V614</ErrorCode>
+    <Message>Potentially uninitialized variable 'win_col_offset' used. Consider checking the second actual argument of the 'draw_virt_text' function.</Message>
+    <Line>4090</Line>
+    <File>./src/nvim/screen.c</File>
+    <CWECode>CWE-457</CWECode>
+    <SAST>CERT-EXP33-C</SAST>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <Level>2</Level>
+    <ErrorType>warning</ErrorType>
     <ErrorCode>V1051</ErrorCode>
     <Message>Consider checking for misprints. It's possible that the 'vcol_sbr' should be checked here.</Message>
-    <Line>2869</Line>
+    <Line>2874</Line>
     <File>./src/nvim/screen.c</File>
     <Positions>
-      <Position lines="2869,2866">./src/nvim/screen.c</Position>
+      <Position lines="2874,2871">./src/nvim/screen.c</Position>
     </Positions>
     <CWECode>CWE-754</CWECode>
   </PVS-Studio_Analysis_Log>
@@ -584,7 +594,7 @@
     <ErrorType>error</ErrorType>
     <ErrorCode>V512</ErrorCode>
     <Message>A call of the 'memset' function will lead to underflow of the buffer 'buf_fold'.</Message>
-    <Line>2928</Line>
+    <Line>2933</Line>
     <File>./src/nvim/screen.c</File>
     <CWECode>CWE-682</CWECode>
   </PVS-Studio_Analysis_Log>
@@ -593,7 +603,7 @@
     <ErrorType>warning</ErrorType>
     <ErrorCode>V560</ErrorCode>
     <Message>A part of conditional expression is always true: eol_hl_off == 0.</Message>
-    <Line>3839</Line>
+    <Line>3844</Line>
     <File>./src/nvim/screen.c</File>
     <CWECode>CWE-571</CWECode>
   </PVS-Studio_Analysis_Log>
@@ -602,10 +612,10 @@
     <ErrorType>warning</ErrorType>
     <ErrorCode>V1051</ErrorCode>
     <Message>Consider checking for misprints. It's possible that the 'redraw_next' should be checked here.</Message>
-    <Line>4643</Line>
+    <Line>4661</Line>
     <File>./src/nvim/screen.c</File>
     <Positions>
-      <Position lines="4643,4639">./src/nvim/screen.c</Position>
+      <Position lines="4661,4657">./src/nvim/screen.c</Position>
     </Positions>
     <CWECode>CWE-754</CWECode>
   </PVS-Studio_Analysis_Log>
@@ -614,7 +624,7 @@
     <ErrorType>warning</ErrorType>
     <ErrorCode>V512</ErrorCode>
     <Message>A call of the 'strcpy' function will lead to overflow of the buffer '(char *)(p + len)'.</Message>
-    <Line>5113</Line>
+    <Line>5131</Line>
     <File>./src/nvim/screen.c</File>
     <CWECode>CWE-119</CWECode>
   </PVS-Studio_Analysis_Log>
@@ -623,7 +633,7 @@
     <ErrorType>error</ErrorType>
     <ErrorCode>V1063</ErrorCode>
     <Message>The modulo by 1 operation is meaningless. The result will always be zero.</Message>
-    <Line>6991</Line>
+    <Line>7009</Line>
     <File>./src/nvim/screen.c</File>
   </PVS-Studio_Analysis_Log>
   <PVS-Studio_Analysis_Log>

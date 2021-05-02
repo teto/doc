@@ -755,15 +755,15 @@
 <a name="ln742">    next = sign-&gt;se_next;</a>
 <a name="ln743">    new_lnum = sign-&gt;se_lnum;</a>
 <a name="ln744">    if (sign-&gt;se_lnum &gt;= line1 &amp;&amp; sign-&gt;se_lnum &lt;= line2) {</a>
-<a name="ln745">      if (amount == MAXLNUM &amp;&amp; (!is_fixed || signcol &gt;= 2)) {</a>
-<a name="ln746">        *lastp = next;</a>
-<a name="ln747">        if (next) {</a>
-<a name="ln748">          next-&gt;se_prev = last;</a>
-<a name="ln749">        }</a>
-<a name="ln750">        xfree(sign);</a>
-<a name="ln751">        continue;</a>
-<a name="ln752">      } else {</a>
-<a name="ln753">        new_lnum += amount;</a>
+<a name="ln745">      if (amount != MAXLNUM) {</a>
+<a name="ln746">        new_lnum += amount;</a>
+<a name="ln747">      } else if (!is_fixed || signcol &gt;= 2) {</a>
+<a name="ln748">        *lastp = next;</a>
+<a name="ln749">        if (next) {</a>
+<a name="ln750">          next-&gt;se_prev = last;</a>
+<a name="ln751">        }</a>
+<a name="ln752">        xfree(sign);</a>
+<a name="ln753">        continue;</a>
 <a name="ln754">      }</a>
 <a name="ln755">    } else if (sign-&gt;se_lnum &gt; line2) {</a>
 <a name="ln756">      new_lnum += amount_after;</a>

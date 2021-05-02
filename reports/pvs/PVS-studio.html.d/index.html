@@ -36,10 +36,10 @@
   </div>
 
   <table cellpadding="0" cellspacing="0" border="0" class="infotopic">
-     <tr><th id="col_info">Date:</th><td>Sat May  1 05:44:50 2021</td></tr>
+     <tr><th id="col_info">Date:</th><td>Sun May  2 05:41:47 2021</td></tr>
      <tr><th id="col_info">PVS-Studio Version:</th><td>7.12.46137.116</td></tr>
      <tr><th id="col_info">Command Line:</th><td>plog-converter PVS-studio.log --srcRoot . --excludedCodes V011 --renderTypes fullhtml --output PVS-studio.html.d </td></tr>
-     <tr><th id="col_info">Total Warnings (GA):</th><td>91</td></tr>
+     <tr><th id="col_info">Total Warnings (GA):</th><td>92</td></tr>
   </table>
   <table cellpadding="0" cellspacing="0" border="0" class="sortable" id="sorter">
     <tr>
@@ -485,42 +485,49 @@
     </tr>
     <tr>
       <td id="col_group">General Analysis</td>
-      <td id="col_file"><a target="_blank" href="sources/screen.c_23.html#ln2869">screen.c:2869</a></td>
+      <td id="col_file"><a target="_blank" href="sources/screen.c_23.html#ln4090">screen.c:4090</a></td>
+      <td id="col_level" style="color:#FFA500"><b>Medium</b></td>
+      <td id="col_code"><a target="_blank" href="https://www.viva64.com/en/w/v614/">V614</td>
+      <td id="col_message">Potentially uninitialized variable 'win_col_offset' used. Consider checking the second actual argument of the 'draw_virt_text' function.</td>
+    </tr>
+    <tr>
+      <td id="col_group">General Analysis</td>
+      <td id="col_file"><a target="_blank" href="sources/screen.c_23.html#ln2874">screen.c:2874</a></td>
       <td id="col_level" style="color:#FFA500"><b>Medium</b></td>
       <td id="col_code"><a target="_blank" href="https://www.viva64.com/en/w/v1051/">V1051</td>
       <td id="col_message">Consider checking for misprints. It's possible that the 'vcol_sbr' should be checked here.</td>
     </tr>
     <tr>
       <td id="col_group">General Analysis</td>
-      <td id="col_file"><a target="_blank" href="sources/screen.c_23.html#ln2928">screen.c:2928</a></td>
+      <td id="col_file"><a target="_blank" href="sources/screen.c_23.html#ln2933">screen.c:2933</a></td>
       <td id="col_level" style="color:#FF0000"><b>High</b></td>
       <td id="col_code"><a target="_blank" href="https://www.viva64.com/en/w/v512/">V512</td>
       <td id="col_message">A call of the 'memset' function will lead to underflow of the buffer 'buf_fold'.</td>
     </tr>
     <tr>
       <td id="col_group">General Analysis</td>
-      <td id="col_file"><a target="_blank" href="sources/screen.c_23.html#ln3839">screen.c:3839</a></td>
+      <td id="col_file"><a target="_blank" href="sources/screen.c_23.html#ln3844">screen.c:3844</a></td>
       <td id="col_level" style="color:#FFA500"><b>Medium</b></td>
       <td id="col_code"><a target="_blank" href="https://www.viva64.com/en/w/v560/">V560</td>
       <td id="col_message">A part of conditional expression is always true: eol_hl_off == 0.</td>
     </tr>
     <tr>
       <td id="col_group">General Analysis</td>
-      <td id="col_file"><a target="_blank" href="sources/screen.c_23.html#ln4643">screen.c:4643</a></td>
+      <td id="col_file"><a target="_blank" href="sources/screen.c_23.html#ln4661">screen.c:4661</a></td>
       <td id="col_level" style="color:#FFA500"><b>Medium</b></td>
       <td id="col_code"><a target="_blank" href="https://www.viva64.com/en/w/v1051/">V1051</td>
       <td id="col_message">Consider checking for misprints. It's possible that the 'redraw_next' should be checked here.</td>
     </tr>
     <tr>
       <td id="col_group">General Analysis</td>
-      <td id="col_file"><a target="_blank" href="sources/screen.c_23.html#ln5113">screen.c:5113</a></td>
+      <td id="col_file"><a target="_blank" href="sources/screen.c_23.html#ln5131">screen.c:5131</a></td>
       <td id="col_level" style="color:#FFA500"><b>Medium</b></td>
       <td id="col_code"><a target="_blank" href="https://www.viva64.com/en/w/v512/">V512</td>
       <td id="col_message">A call of the 'strcpy' function will lead to overflow of the buffer '(char *)(p + len)'.</td>
     </tr>
     <tr>
       <td id="col_group">General Analysis</td>
-      <td id="col_file"><a target="_blank" href="sources/screen.c_23.html#ln6991">screen.c:6991</a></td>
+      <td id="col_file"><a target="_blank" href="sources/screen.c_23.html#ln7009">screen.c:7009</a></td>
       <td id="col_level" style="color:#FF0000"><b>High</b></td>
       <td id="col_code"><a target="_blank" href="https://www.viva64.com/en/w/v1063/">V1063</td>
       <td id="col_message">The modulo by 1 operation is meaningless. The result will always be zero.</td>

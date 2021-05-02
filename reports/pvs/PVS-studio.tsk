@@ -61,12 +61,13 @@ www.viva64.com/en/w	1	err	Help: The documentation for all analyzer warnings is a
 ./src/nvim/regexp_nfa.c	6170	err	V1051 Consider checking for misprints. It's possible that the 'pim->result' should be checked here.
 ./src/nvim/screen.c	1720	warn	V560 A part of conditional expression is always false: wp->w_wcol == old_wcol.
 ./src/nvim/screen.c	1722	warn	V560 A part of conditional expression is always true: old_topline == wp->w_topline.
-./src/nvim/screen.c	2869	warn	V1051 Consider checking for misprints. It's possible that the 'vcol_sbr' should be checked here.
-./src/nvim/screen.c	2928	err	V512 A call of the 'memset' function will lead to underflow of the buffer 'buf_fold'.
-./src/nvim/screen.c	3839	warn	V560 A part of conditional expression is always true: eol_hl_off == 0.
-./src/nvim/screen.c	4643	warn	V1051 Consider checking for misprints. It's possible that the 'redraw_next' should be checked here.
-./src/nvim/screen.c	5113	warn	V512 A call of the 'strcpy' function will lead to overflow of the buffer '(char *)(p + len)'.
-./src/nvim/screen.c	6991	err	V1063 The modulo by 1 operation is meaningless. The result will always be zero.
+./src/nvim/screen.c	4090	warn	V614 Potentially uninitialized variable 'win_col_offset' used. Consider checking the second actual argument of the 'draw_virt_text' function.
+./src/nvim/screen.c	2874	warn	V1051 Consider checking for misprints. It's possible that the 'vcol_sbr' should be checked here.
+./src/nvim/screen.c	2933	err	V512 A call of the 'memset' function will lead to underflow of the buffer 'buf_fold'.
+./src/nvim/screen.c	3844	warn	V560 A part of conditional expression is always true: eol_hl_off == 0.
+./src/nvim/screen.c	4661	warn	V1051 Consider checking for misprints. It's possible that the 'redraw_next' should be checked here.
+./src/nvim/screen.c	5131	warn	V512 A call of the 'strcpy' function will lead to overflow of the buffer '(char *)(p + len)'.
+./src/nvim/screen.c	7009	err	V1063 The modulo by 1 operation is meaningless. The result will always be zero.
 ./src/nvim/search.c	1530	warn	V768 The variable 'dir' is of enum type. It is odd that it is used as a variable of a Boolean-type.
 ./src/nvim/sha256.c	7	err	V1042 This file is marked with copyleft license, which requires you to open the derived source code.
 ./src/nvim/shada.c	4100	err	V1063 The modulo by 1 operation is meaningless. The result will always be zero.
