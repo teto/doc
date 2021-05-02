@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>PVS-studio analysis results</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="/css/main.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <nav class="navbar">
+          <div class="container-fluid">
+            <div class="navbar-header">
+
+              <a href="/" class="navbar-brand">
+                <img src="/images/logo@2x.png" id="navbar-logo" alt="Neovim">
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <h1>PVS-studio analysis results</h1>
+<pre>www.viva64.com/en/w:1:1: error: Help: The documentation for all analyzer warnings is available here: https://www.viva64.com/en/w/.
+./src/nvim/eval/typval_encode.c.h:393:1: warning: V785 Constant expression in switch statement.
+./src/nvim/buffer.c:3142:1: warning: V681 The language standard does not define an order in which the 'bt_dontwrite' functions will be called during evaluation of arguments.
+./src/nvim/eval.c:5467:1: error: V1063 The modulo by 1 operation is meaningless. The result will always be zero.
+./src/nvim/eval.c:5747:1: error: V576 Incorrect format. Consider checking the fourth actual argument of the 'vim_snprintf' function. The memsize type argument is expected.
+./src/nvim/eval.c:5747:1: error: V576 Incorrect format. Consider checking the fifth actual argument of the 'vim_snprintf' function. The memsize type argument is expected.
+./src/nvim/eval.c:6117:1: warning: V1051 Consider checking for misprints. It's possible that the 'trans_name' should be checked here.
+./src/nvim/eval/typval_encode.c.h:283:1: error: V1063 The modulo by 1 operation is meaningless. The result will always be zero.
+./src/nvim/eval/typval_encode.c.h:326:1: error: V1063 The modulo by 1 operation is meaningless. The result will always be zero.
+./src/nvim/eval/typval_encode.c.h:326:1: error: V576 Incorrect format. Consider checking the fourth actual argument of the 'vim_snprintf' function. The memsize type argument is expected.
+./src/nvim/eval/typval_encode.c.h:330:1: error: V1063 The modulo by 1 operation is meaningless. The result will always be zero.
+./src/nvim/eval/typval_encode.c.h:489:1: error: V1063 The modulo by 1 operation is meaningless. The result will always be zero.
+./src/nvim/eval/typval_encode.c.h:489:1: error: V576 Incorrect format. Consider checking the fourth actual argument of the 'vim_snprintf' function. The memsize type argument is expected.
+./src/nvim/eval/typval_encode.c.h:497:1: error: V1063 The modulo by 1 operation is meaningless. The result will always be zero.
+./src/nvim/eval/typval_encode.c.h:487:1: error: V1063 The modulo by 1 operation is meaningless. The result will always be zero.
+./src/nvim/eval/typval_encode.c.h:487:1: error: V576 Incorrect format. Consider checking the fourth actual argument of the 'vim_snprintf' function. The memsize type argument is expected.
+./src/nvim/eval/funcs.c:1822:1: error: V547 Expression is always true.
+./src/nvim/eval/funcs.c:2502:1: warning: V560 A part of conditional expression is always true: mods != NULL.
+./src/nvim/eval/funcs.c:3729:1: error: V1063 The modulo by 1 operation is meaningless. The result will always be zero.
+./src/nvim/eval/funcs.c:8297:1: warning: V560 A part of conditional expression is always true.
+./src/nvim/eval/typval.c:2712:1: error: V547 Expression is always true.
+./src/nvim/eval/userfunc.c:147:1: warning: V547 Expression 'expr == NULL' is always false.
+./src/nvim/eval/userfunc.c:3471:1: warning: V560 A part of conditional expression is always false: abort.
+./src/nvim/eval/userfunc.c:3501:1: warning: V560 A part of conditional expression is always false: abort.
+./src/nvim/eval/userfunc.c:3509:1: warning: V560 A part of conditional expression is always false: abort.
+./src/nvim/ex_cmds.c:3641:1: error: V1051 Consider checking for misprints. It's possible that the 'current_match.start.lnum' should be checked here.
+./src/nvim/ex_cmds2.c:2747:1: warning: V507 Pointer to local array 'sourcing_name_buf' is stored outside the scope of this array. Such a pointer will become invalid.
+./src/nvim/ex_docmd.c:4183:1: warning: V547 Expression 'eap->line2 &lt; 0' is always false.
+./src/nvim/fileio.c:4497:1: error: V1063 The modulo by 1 operation is meaningless. The result will always be zero.
+./src/nvim/fileio.c:5384:1: error: V1063 The modulo by 1 operation is meaningless. The result will always be zero.
+./src/nvim/fold.c:2846:1: warning: V560 A part of conditional expression is always true: (gap)->ga_len > 0.
+./src/nvim/fold.c:2850:1: warning: V560 A part of conditional expression is always true: (gap)->ga_len > 0.
+./src/nvim/fold.c:2869:1: warning: V560 A part of conditional expression is always true: (gap)->ga_len > 0.
+./src/nvim/highlight.c:567:1: warning: V1051 Consider checking for misprints. It's possible that the 'cattrs.rgb_fg_color' should be checked here.
+./src/nvim/highlight.c:585:1: warning: V1051 Consider checking for misprints. It's possible that the 'cattrs.rgb_fg_color' should be checked here.
+./src/nvim/if_cscope.c:1934:1: error: V1063 The modulo by 1 operation is meaningless. The result will always be zero.
+./src/nvim/keymap.c:672:1: warning: V1051 Consider checking for misprints. It's possible that the 'key' should be checked here.
+./src/nvim/marktree.c:164:1: error: V512 A call of the 'memcpy' function will lead to underflow of the buffer 'z->key'.
+./src/nvim/marktree.c:469:1: error: V1028 Possible overflow. Consider casting operands of the 'y->n + 1' operator to the 'size_t' type, not the result.
+./src/nvim/marktree.c:491:1: error: V1028 Possible overflow. Consider casting operands of the 'y->n + 1' operator to the 'size_t' type, not the result.
+./src/nvim/memline.c:1017:1: warning: V1048 The 'buf->b_ml.ml_stack_top' variable was assigned the same value.
+./src/nvim/memline.c:1019:1: warning: V1048 The 'buf->b_ml.ml_stack_size' variable was assigned the same value.
+./src/nvim/normal.c:3176:1: error: V781 The value of the 'col' index is checked after it was used. Perhaps there is a mistake in program logic.
+./src/nvim/ops.c:2765:1: error: V1063 The modulo by 1 operation is meaningless. The result will always be zero.
+./src/nvim/ops.c:5018:1: error: V1063 The modulo by 1 operation is meaningless. The result will always be zero.
+./src/nvim/ops.c:5020:1: error: V1063 The modulo by 1 operation is meaningless. The result will always be zero.
+./src/nvim/ops.c:5022:1: error: V1063 The modulo by 1 operation is meaningless. The result will always be zero.
+./src/nvim/ops.c:5024:1: error: V1063 The modulo by 1 operation is meaningless. The result will always be zero.
+./src/nvim/option.c:4077:1: error: V1063 The modulo by 1 operation is meaningless. The result will always be zero.
+./src/nvim/option.c:4079:1: error: V1063 The modulo by 1 operation is meaningless. The result will always be zero.
+./src/nvim/option.c:4081:1: error: V1063 The modulo by 1 operation is meaningless. The result will always be zero.
+./src/nvim/option.c:4478:1: error: V1063 The modulo by 1 operation is meaningless. The result will always be zero.
+./src/nvim/option.c:4479:1: error: V1063 The modulo by 1 operation is meaningless. The result will always be zero.
+./src/nvim/option.c:4480:1: error: V1063 The modulo by 1 operation is meaningless. The result will always be zero.
+./src/nvim/option.c:4515:1: error: V1063 The modulo by 1 operation is meaningless. The result will always be zero.
+./src/nvim/os/fs.c:475:1: error: V617 Consider inspecting the condition. The '01' argument of the '|' bitwise operation contains a non-zero value.
+./src/nvim/os/input.c:448:1: warning: V1044 Loop break conditions do not depend on the number of iterations.
+./src/nvim/quickfix.c:2755:1: warning: V560 A part of conditional expression is always false: old_qf_curlist != qi->qf_curlist.
+./src/nvim/quickfix.c:2756:1: warning: V560 A part of conditional expression is always false: old_changetick != qfl->qf_changedtick.
+./src/nvim/quickfix.c:2859:1: warning: V560 A part of conditional expression is always false: old_changetick != qfl->qf_changedtick.
+./src/nvim/regexp_nfa.c:6170:1: error: V1051 Consider checking for misprints. It's possible that the 'pim->result' should be checked here.
+./src/nvim/screen.c:1720:1: warning: V560 A part of conditional expression is always false: wp->w_wcol == old_wcol.
+./src/nvim/screen.c:1722:1: warning: V560 A part of conditional expression is always true: old_topline == wp->w_topline.
+./src/nvim/screen.c:2869:1: warning: V1051 Consider checking for misprints. It's possible that the 'vcol_sbr' should be checked here.
+./src/nvim/screen.c:2928:1: error: V512 A call of the 'memset' function will lead to underflow of the buffer 'buf_fold'.
+./src/nvim/screen.c:3839:1: warning: V560 A part of conditional expression is always true: eol_hl_off == 0.
+./src/nvim/screen.c:4643:1: warning: V1051 Consider checking for misprints. It's possible that the 'redraw_next' should be checked here.
+./src/nvim/screen.c:5113:1: warning: V512 A call of the 'strcpy' function will lead to overflow of the buffer '(char *)(p + len)'.
+./src/nvim/screen.c:6991:1: error: V1063 The modulo by 1 operation is meaningless. The result will always be zero.
+./src/nvim/search.c:1530:1: warning: V768 The variable 'dir' is of enum type. It is odd that it is used as a variable of a Boolean-type.
+./src/nvim/sha256.c:7:1: error: V1042 This file is marked with copyleft license, which requires you to open the derived source code.
+./src/nvim/shada.c:4100:1: error: V1063 The modulo by 1 operation is meaningless. The result will always be zero.
+./src/nvim/sign.c:2015:1: warning: V547 Expression 'group == NULL' is always false.
+./src/nvim/sign.c:2117:1: warning: V547 Expression 'group == NULL' is always false.
+./src/nvim/spell.c:449:1: warning: V557 Array underrun is possible. The value of 'mi.mi_fwordlen - 1' index could reach -1.
+./src/nvim/spell.c:5968:1: error: V781 The value of the 'i' index is checked after it was used. Perhaps there is a mistake in program logic.
+./src/nvim/strings.c:596:1: error: V568 It's odd that 'sizeof()' operator evaluates the size of a pointer to a class, but not the size of the 'tvs[0].vval.v_list' class object.
+./src/nvim/strings.c:596:1: error: V568 It's odd that 'sizeof()' operator evaluates the size of a pointer to a class, but not the size of the 'tvs[0].vval.v_dict' class object.
+./src/nvim/strings.c:596:1: error: V568 It's odd that 'sizeof()' operator evaluates the size of a pointer to a class, but not the size of the 'tvs[0].vval.v_partial' class object.
+./src/nvim/syntax.c:3361:1: warning: V1051 Consider checking for misprints. It's possible that the 'arg_end' should be checked here.
+./src/nvim/syntax.c:3550:1: warning: V1051 Consider checking for misprints. It's possible that the 'arg_end' should be checked here.
+./src/nvim/tag.c:1187:1: warning: V560 A part of conditional expression is always true: rettv.vval.v_special == kSpecialVarNull.
+./src/nvim/tui/input.c:592:1: warning: V1044 Loop break conditions do not depend on the number of iterations.
+./src/nvim/tui/input.c:604:1: warning: V1044 Loop break conditions do not depend on the number of iterations.
+./src/nvim/tui/tui.c:1133:1: warning: V751 Parameter 'cols' is not used inside function body.
+./src/nvim/tui/tui.c:1850:1: warning: V1051 Consider checking for misprints. It's possible that the 'data->unibi_ext.set_cursor_style' should be checked here.
+./src/nvim/tui/tui.c:1877:1: warning: V1051 Consider checking for misprints. It's possible that the 'data->unibi_ext.set_cursor_style' should be checked here.
+./src/nvim/tui/tui.c:1895:1: warning: V1051 Consider checking for misprints. It's possible that the 'data->unibi_ext.set_cursor_style' should be checked here.
+./src/nvim/undo.c:1021:1: warning: V547 Expression 'buf' is always true.
+./test/functional/fixtures/streams-test.c:24:1: warning: V507 Pointer to local array 'args' is stored outside the scope of this array. Such a pointer will become invalid.
+./test/unit/fixtures/rbuffer.c:10:1: warning: V1044 Loop break conditions do not depend on the number of iterations.
+./test/unit/fixtures/rbuffer.c:18:1: warning: V1044 Loop break conditions do not depend on the number of iterations.</pre>
+    </div>
+
+    <footer>
+      <div class="container">
+        Generated Fri Apr 30 05:44:28 UTC 2021 from <a href="https://github.com/neovim/neovim/commit/59eae3b38fc98ba8c14e681b6d231e9821a11d52"><code>59eae3b</code></a>.
+      </div>
+    </footer>
+  </body>
+</html>
