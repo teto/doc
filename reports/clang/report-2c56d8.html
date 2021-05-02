@@ -142,32 +142,32 @@ input.spoilerhider:checked + label + .spoiler{
 </style>
 </head>
 <body>
-<!-- BUGDESC Null pointer passed to 1st parameter expecting 'nonnull' -->
+<!-- BUGDESC 2nd function call argument is an uninitialized value -->
 
-<!-- BUGTYPE Argument with 'nonnull' attribute passed null -->
+<!-- BUGTYPE Uninitialized argument value -->
 
-<!-- BUGCATEGORY API -->
+<!-- BUGCATEGORY Logic error -->
 
 <!-- BUGFILE /home/runner/work/doc/doc/neovim/build/../src/nvim/eval.c -->
 
 <!-- FILENAME eval.c -->
 
-<!-- FUNCTIONNAME callback_from_typval -->
+<!-- FUNCTIONNAME do_lock_var -->
 
-<!-- ISSUEHASHCONTENTOFLINEINCONTEXT 00935003a1f87c6f0c49ad94be958ba5 -->
+<!-- ISSUEHASHCONTENTOFLINEINCONTEXT 5785bf592d9ba075ffdcd3daad98fab3 -->
 
-<!-- BUGLINE 7199 -->
+<!-- BUGLINE 2954 -->
 
 <!-- BUGCOLUMN 30 -->
 
-<!-- BUGPATHLENGTH 8 -->
+<!-- BUGPATHLENGTH 18 -->
 
 <!-- BUGMETAEND -->
 <!-- REPORTHEADER -->
 <h3>Bug Summary</h3>
 <table class="simpletable">
 <tr><td class="rowname">File:</td><td>/home/runner/work/doc/doc/neovim/build/../src/nvim/eval.c</td></tr>
-<tr><td class="rowname">Warning:</td><td><a href="#EndPath">line 7199, column 30</a><br />Null pointer passed to 1st parameter expecting 'nonnull'</td></tr>
+<tr><td class="rowname">Warning:</td><td><a href="#EndPath">line 2954, column 30</a><br />2nd function call argument is an uninitialized value</td></tr>
 
 </table>
 <!-- REPORTSUMMARYEXTRA -->
@@ -176,7 +176,7 @@ input.spoilerhider:checked + label + .spoiler{
    to see keyboard shortcuts</p>
 <input type="checkbox" class="spoilerhider" id="showinvocation" />
 <label for="showinvocation" >Show analyzer invocation</label>
-<div class="spoiler">clang -cc1 -triple x86_64-pc-linux-gnu -analyze -disable-free -disable-llvm-verifier -discard-value-names -main-file-name eval.c -analyzer-store=region -analyzer-opt-analyze-nested-blocks -analyzer-checker=core -analyzer-checker=apiModeling -analyzer-checker=unix -analyzer-checker=deadcode -analyzer-checker=security.insecureAPI.UncheckedReturn -analyzer-checker=security.insecureAPI.getpw -analyzer-checker=security.insecureAPI.gets -analyzer-checker=security.insecureAPI.mktemp -analyzer-checker=security.insecureAPI.mkstemp -analyzer-checker=security.insecureAPI.vfork -analyzer-checker=nullability.NullPassedToNonnull -analyzer-checker=nullability.NullReturnedFromNonnull -analyzer-output plist -w -setup-static-analyzer -mrelocation-model static -mthread-model posix -mframe-pointer=all -fmath-errno -fno-rounding-math -masm-verbose -mconstructor-aliases -munwind-tables -target-cpu x86-64 -dwarf-column-info -fno-split-dwarf-inlining -debugger-tuning=gdb -resource-dir /usr/lib/llvm-10/lib/clang/10.0.0 -isystem ../.deps/usr/include -D INCLUDE_GENERATED_DECLARATIONS -D MIN_LOG_LEVEL=1 -D NVIM_MSGPACK_HAS_FLOAT32 -D NVIM_UNIBI_HAS_VAR_FROM -D _GNU_SOURCE -D nvim_EXPORTS -I config -I ../src -I src/nvim/auto -I include -I ../.deps/usr/include/luajit-2.1 -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm-10/lib/clang/10.0.0/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -Wno-unused-parameter -Wno-conversion -std=gnu99 -fdebug-compilation-dir /home/runner/work/doc/doc/neovim/build -ferror-limit 19 -fmessage-length 0 -stack-protector 2 -fgnuc-version=4.2.1 -fobjc-runtime=gcc -fno-common -fdiagnostics-show-option -fcolor-diagnostics -analyzer-output=html -faddrsig -o /home/runner/work/doc/doc/neovim/build/clang-report/2021-05-01-053101-24507-1 -x c ../src/nvim/eval.c
+<div class="spoiler">clang -cc1 -triple x86_64-pc-linux-gnu -analyze -disable-free -disable-llvm-verifier -discard-value-names -main-file-name eval.c -analyzer-store=region -analyzer-opt-analyze-nested-blocks -analyzer-checker=core -analyzer-checker=apiModeling -analyzer-checker=unix -analyzer-checker=deadcode -analyzer-checker=security.insecureAPI.UncheckedReturn -analyzer-checker=security.insecureAPI.getpw -analyzer-checker=security.insecureAPI.gets -analyzer-checker=security.insecureAPI.mktemp -analyzer-checker=security.insecureAPI.mkstemp -analyzer-checker=security.insecureAPI.vfork -analyzer-checker=nullability.NullPassedToNonnull -analyzer-checker=nullability.NullReturnedFromNonnull -analyzer-output plist -w -setup-static-analyzer -mrelocation-model static -mthread-model posix -mframe-pointer=all -fmath-errno -fno-rounding-math -masm-verbose -mconstructor-aliases -munwind-tables -target-cpu x86-64 -dwarf-column-info -fno-split-dwarf-inlining -debugger-tuning=gdb -resource-dir /usr/lib/llvm-10/lib/clang/10.0.0 -isystem ../.deps/usr/include -D INCLUDE_GENERATED_DECLARATIONS -D MIN_LOG_LEVEL=1 -D NVIM_MSGPACK_HAS_FLOAT32 -D NVIM_UNIBI_HAS_VAR_FROM -D _GNU_SOURCE -D nvim_EXPORTS -I config -I ../src -I src/nvim/auto -I include -I ../.deps/usr/include/luajit-2.1 -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm-10/lib/clang/10.0.0/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -Wno-unused-parameter -Wno-conversion -std=gnu99 -fdebug-compilation-dir /home/runner/work/doc/doc/neovim/build -ferror-limit 19 -fmessage-length 0 -stack-protector 2 -fgnuc-version=4.2.1 -fobjc-runtime=gcc -fno-common -fdiagnostics-show-option -fcolor-diagnostics -analyzer-output=html -faddrsig -o /home/runner/work/doc/doc/neovim/build/clang-report/2021-05-02-053118-24610-1 -x c ../src/nvim/eval.c
 </div>
 <div id='tooltiphint' hidden="true">
   <p>Keyboard shortcuts: </p>
@@ -188,7 +188,7 @@ input.spoilerhider:checked + label + .spoiler{
   <a href="#" onclick="toggleHelp(); return false;">Close</a>
 </div>
 <script type='text/javascript'>
-var relevant_lines = {"1": {"7183": 1, "7184": 1, "7185": 1, "7186": 1, "7188": 1, "7192": 1, "7193": 1, "7196": 1, "7197": 1, "7198": 1, "7199": 1}};
+var relevant_lines = {"1": {"2680": 1, "2681": 1, "2682": 1, "2683": 1, "2685": 1, "2687": 1, "2692": 1, "2706": 1, "2707": 1, "2708": 1, "2709": 1, "2710": 1, "2711": 1, "2712": 1, "2713": 1, "2716": 1, "2717": 1, "2718": 1, "2719": 1, "2720": 1, "2724": 1, "2937": 1, "2938": 1, "2939": 1, "2940": 1, "2941": 1, "2942": 1, "2944": 1, "2948": 1, "2949": 1, "2954": 1, "2955": 1, "2956": 1, "7785": 1, "7786": 1, "7787": 1, "7789": 1, "7790": 1, "7792": 1, "7796": 1, "7797": 1, "7798": 1}, "27469": {"143": 1, "144": 1, "145": 1}};
 
 var filterCounterexample = function (hide) {
   var tables = document.getElementsByClassName("code");
@@ -3027,14 +3027,18 @@ window.addEventListener("keydown", function (event) {
 <tr class="codeline" data-linenumber="2682"><td class="num" id="LN2682">2682</td><td class="line">  char_u *arg = eap-&gt;arg;</td></tr>
 <tr class="codeline" data-linenumber="2683"><td class="num" id="LN2683">2683</td><td class="line">  <span class='keyword'>int</span> deep = 2;</td></tr>
 <tr class="codeline" data-linenumber="2684"><td class="num" id="LN2684">2684</td><td class="line"> </td></tr>
-<tr class="codeline" data-linenumber="2685"><td class="num" id="LN2685">2685</td><td class="line">  <span class='keyword'>if</span> (eap-&gt;forceit) {</td></tr>
+<tr class="codeline" data-linenumber="2685"><td class="num" id="LN2685">2685</td><td class="line">  <span class='keyword'>if</span> (<span class="mrange">eap-&gt;forceit</span>) {</td></tr>
+<tr><td class="num"></td><td class="line"><div id="Path1" class="msg msgEvent" style="margin-left:7ex"><table class="msgT"><tr><td valign="top"><div class="PathIndex PathIndexEvent">1</div></td><td>Assuming field 'forceit' is 0</td><td><div class="PathNav"><a href="#Path2" title="Next event (2)">&#x2192;</a></div></td></tr></table></div></td></tr>
+<tr><td class="num"></td><td class="line"><div id="Path2" class="msg msgControl" style="margin-left:3ex"><table class="msgT"><tr><td valign="top"><div class="PathIndex PathIndexControl">2</div></td><td><div class="PathNav"><a href="#Path1" title="Previous event (1)">&#x2190;</a></div></td><td>Taking false branch</td><td><div class="PathNav"><a href="#Path3" title="Next event (3)">&#x2192;</a></div></td></tr></table></div></td></tr>
 <tr class="codeline" data-linenumber="2686"><td class="num" id="LN2686">2686</td><td class="line">    deep = -1;</td></tr>
 <tr class="codeline" data-linenumber="2687"><td class="num" id="LN2687">2687</td><td class="line">  } <span class='keyword'>else</span> <span class='keyword'>if</span> (ascii_isdigit(*arg)) {</td></tr>
+<tr><td class="num"></td><td class="line"><div id="Path3" class="msg msgControl" style="margin-left:10ex"><table class="msgT"><tr><td valign="top"><div class="PathIndex PathIndexControl">3</div></td><td><div class="PathNav"><a href="#Path2" title="Previous event (2)">&#x2190;</a></div></td><td>Taking false branch</td><td><div class="PathNav"><a href="#Path4" title="Next event (4)">&#x2192;</a></div></td></tr></table></div></td></tr>
 <tr class="codeline" data-linenumber="2688"><td class="num" id="LN2688">2688</td><td class="line">    deep = getdigits_int(&amp;arg, <span class='macro'>false<span class='macro_popup'>0</span></span>, -1);</td></tr>
 <tr class="codeline" data-linenumber="2689"><td class="num" id="LN2689">2689</td><td class="line">    arg = skipwhite(arg);</td></tr>
 <tr class="codeline" data-linenumber="2690"><td class="num" id="LN2690">2690</td><td class="line">  }</td></tr>
 <tr class="codeline" data-linenumber="2691"><td class="num" id="LN2691">2691</td><td class="line"> </td></tr>
-<tr class="codeline" data-linenumber="2692"><td class="num" id="LN2692">2692</td><td class="line">  ex_unletlock(eap, arg, deep, do_lock_var);</td></tr>
+<tr class="codeline" data-linenumber="2692"><td class="num" id="LN2692">2692</td><td class="line">  <span class="mrange">ex_unletlock(eap, arg, deep, do_lock_var)</span>;</td></tr>
+<tr><td class="num"></td><td class="line"><div id="Path4" class="msg msgEvent" style="margin-left:3ex"><table class="msgT"><tr><td valign="top"><div class="PathIndex PathIndexEvent">4</div></td><td><div class="PathNav"><a href="#Path3" title="Previous event (3)">&#x2190;</a></div></td><td>Calling 'ex_unletlock'</td><td><div class="PathNav"><a href="#Path5" title="Next event (5)">&#x2192;</a></div></td></tr></table></div></td></tr>
 <tr class="codeline" data-linenumber="2693"><td class="num" id="LN2693">2693</td><td class="line">}</td></tr>
 <tr class="codeline" data-linenumber="2694"><td class="num" id="LN2694">2694</td><td class="line"> </td></tr>
 <tr class="codeline" data-linenumber="2695"><td class="num" id="LN2695">2695</td><td class="line"><span class='comment'>// TODO(ZyX-I): move to eval/ex_cmds</span></td></tr>
@@ -3058,15 +3062,20 @@ window.addEventListener("keydown", function (event) {
 <tr class="codeline" data-linenumber="2713"><td class="num" id="LN2713">2713</td><td class="line">  lval_T lv;</td></tr>
 <tr class="codeline" data-linenumber="2714"><td class="num" id="LN2714">2714</td><td class="line"> </td></tr>
 <tr class="codeline" data-linenumber="2715"><td class="num" id="LN2715">2715</td><td class="line">  <span class='keyword'>do</span> {</td></tr>
-<tr class="codeline" data-linenumber="2716"><td class="num" id="LN2716">2716</td><td class="line">    <span class='keyword'>if</span> (*arg == '$') {</td></tr>
+<tr class="codeline" data-linenumber="2716"><td class="num" id="LN2716">2716</td><td class="line">    <span class='keyword'>if</span> (<span class="mrange">*arg == '$') {</td></tr></span>
+<tr><td class="num"></td><td class="line"><div id="Path5" class="msg msgEvent" style="margin-left:9ex"><table class="msgT"><tr><td valign="top"><div class="PathIndex PathIndexEvent">5</div></td><td><div class="PathNav"><a href="#Path4" title="Previous event (4)">&#x2190;</a></div></td><td>Assuming the condition is true</td><td><div class="PathNav"><a href="#Path6" title="Next event (6)">&#x2192;</a></div></td></tr></table></div></td></tr>
+<tr><td class="num"></td><td class="line"><div id="Path6" class="msg msgControl" style="margin-left:5ex"><table class="msgT"><tr><td valign="top"><div class="PathIndex PathIndexControl">6</div></td><td><div class="PathNav"><a href="#Path5" title="Previous event (5)">&#x2190;</a></div></td><td>Taking true branch</td><td><div class="PathNav"><a href="#Path7" title="Next event (7)">&#x2192;</a></div></td></tr></table></div></td></tr>
 <tr class="codeline" data-linenumber="2717"><td class="num" id="LN2717">2717</td><td class="line">      lv.ll_name = (<span class='keyword'>const</span> <span class='keyword'>char</span> *)arg;</td></tr>
 <tr class="codeline" data-linenumber="2718"><td class="num" id="LN2718">2718</td><td class="line">      lv.ll_tv = <span class='macro'>NULL<span class='macro_popup'>((void*)0)</span></span>;</td></tr>
 <tr class="codeline" data-linenumber="2719"><td class="num" id="LN2719">2719</td><td class="line">      arg++;</td></tr>
 <tr class="codeline" data-linenumber="2720"><td class="num" id="LN2720">2720</td><td class="line">      <span class='keyword'>if</span> (get_env_len((<span class='keyword'>const</span> char_u **)&amp;arg) == 0) {</td></tr>
+<tr><td class="num"></td><td class="line"><div id="Path7" class="msg msgControl" style="margin-left:7ex"><table class="msgT"><tr><td valign="top"><div class="PathIndex PathIndexControl">7</div></td><td><div class="PathNav"><a href="#Path6" title="Previous event (6)">&#x2190;</a></div></td><td>Taking false branch</td><td><div class="PathNav"><a href="#Path8" title="Next event (8)">&#x2192;</a></div></td></tr></table></div></td></tr>
 <tr class="codeline" data-linenumber="2721"><td class="num" id="LN2721">2721</td><td class="line">        <span class='macro'>EMSG2(_(e_invarg2), arg - 1)<span class='macro_popup'>emsgf((const char *) (gettext((char *)(e_invarg2))), (arg - 1<br>))</span></span>;</td></tr>
 <tr class="codeline" data-linenumber="2722"><td class="num" id="LN2722">2722</td><td class="line">        <span class='keyword'>return</span>;</td></tr>
 <tr class="codeline" data-linenumber="2723"><td class="num" id="LN2723">2723</td><td class="line">      }</td></tr>
-<tr class="codeline" data-linenumber="2724"><td class="num" id="LN2724">2724</td><td class="line">      <span class='keyword'>if</span> (!error &amp;&amp; !eap-&gt;skip &amp;&amp; callback(&amp;lv, arg, eap, deep) == <span class='macro'>FAIL<span class='macro_popup'>0</span></span>) {</td></tr>
+<tr class="codeline" data-linenumber="2724"><td class="num" id="LN2724">2724</td><td class="line">      <span class='keyword'>if</span> (!<span class='variable'>error<table class='variable_popup'><tbody><tr><td valign='top'><div class='PathIndex PathIndexPopUp'>7.1</div></td><td>'error' is false</td></tr></tbody></table></span> &amp;&amp; <span class="mrange">!eap-&gt;skip</span> &amp;&amp; <span class="mrange">callback(&amp;lv, arg, eap, deep)</span> == <span class='macro'>FAIL<span class='macro_popup'>0</span></span>) {</td></tr>
+<tr><td class="num"></td><td class="line"><div id="Path8" class="msg msgEvent" style="margin-left:21ex"><table class="msgT"><tr><td valign="top"><div class="PathIndex PathIndexEvent">8</div></td><td><div class="PathNav"><a href="#Path7" title="Previous event (7)">&#x2190;</a></div></td><td>Assuming field 'skip' is 0</td><td><div class="PathNav"><a href="#Path9" title="Next event (9)">&#x2192;</a></div></td></tr></table></div></td></tr>
+<tr><td class="num"></td><td class="line"><div id="Path9" class="msg msgEvent" style="margin-left:35ex"><table class="msgT"><tr><td valign="top"><div class="PathIndex PathIndexEvent">9</div></td><td><div class="PathNav"><a href="#Path8" title="Previous event (8)">&#x2190;</a></div></td><td>Calling 'do_lock_var'</td><td><div class="PathNav"><a href="#Path10" title="Next event (10)">&#x2192;</a></div></td></tr></table></div></td></tr>
 <tr class="codeline" data-linenumber="2725"><td class="num" id="LN2725">2725</td><td class="line">        error = <span class='macro'>true<span class='macro_popup'>1</span></span>;</td></tr>
 <tr class="codeline" data-linenumber="2726"><td class="num" id="LN2726">2726</td><td class="line">      }</td></tr>
 <tr class="codeline" data-linenumber="2727"><td class="num" id="LN2727">2727</td><td class="line">      name_end = arg;</td></tr>
@@ -3283,21 +3292,27 @@ window.addEventListener("keydown", function (event) {
 <tr class="codeline" data-linenumber="2938"><td class="num" id="LN2938">2938</td><td class="line">                       exarg_T *eap, <span class='keyword'>int</span> deep)</td></tr>
 <tr class="codeline" data-linenumber="2939"><td class="num" id="LN2939">2939</td><td class="line">  FUNC_ATTR_NONNULL_ARG(1, 3)</td></tr>
 <tr class="codeline" data-linenumber="2940"><td class="num" id="LN2940">2940</td><td class="line">{</td></tr>
-<tr class="codeline" data-linenumber="2941"><td class="num" id="LN2941">2941</td><td class="line">  <span class='macro'>bool<span class='macro_popup'>_Bool</span></span> lock = eap-&gt;cmdidx == CMD_lockvar;</td></tr>
+<tr class="codeline" data-linenumber="2941"><td class="num" id="LN2941">2941</td><td class="line">  <span class='macro'>bool<span class='macro_popup'>_Bool</span></span> lock = <span class="mrange">eap-&gt;cmdidx == CMD_lockvar</span>;</td></tr>
+<tr><td class="num"></td><td class="line"><div id="Path10" class="msg msgEvent" style="margin-left:15ex"><table class="msgT"><tr><td valign="top"><div class="PathIndex PathIndexEvent">10</div></td><td><div class="PathNav"><a href="#Path9" title="Previous event (9)">&#x2190;</a></div></td><td>Assuming field 'cmdidx' is not equal to CMD_lockvar</td><td><div class="PathNav"><a href="#Path11" title="Next event (11)">&#x2192;</a></div></td></tr></table></div></td></tr>
 <tr class="codeline" data-linenumber="2942"><td class="num" id="LN2942">2942</td><td class="line">  <span class='keyword'>int</span> ret = <span class='macro'>OK<span class='macro_popup'>1</span></span>;</td></tr>
 <tr class="codeline" data-linenumber="2943"><td class="num" id="LN2943">2943</td><td class="line"> </td></tr>
-<tr class="codeline" data-linenumber="2944"><td class="num" id="LN2944">2944</td><td class="line">  <span class='keyword'>if</span> (deep == 0) {  <span class='comment'>// Nothing to do.</span></td></tr>
+<tr class="codeline" data-linenumber="2944"><td class="num" id="LN2944">2944</td><td class="line">  <span class='keyword'>if</span> (<span class='variable'>deep<table class='variable_popup'><tbody><tr><td valign='top'><div class='PathIndex PathIndexPopUp'>10.1</div></td><td>'deep' is not equal to 0</td></tr></tbody></table></span> == 0) {  <span class='comment'>// Nothing to do.</span></td></tr>
+<tr><td class="num"></td><td class="line"><div id="Path11" class="msg msgControl" style="margin-left:3ex"><table class="msgT"><tr><td valign="top"><div class="PathIndex PathIndexControl">11</div></td><td><div class="PathNav"><a href="#Path10" title="Previous event (10)">&#x2190;</a></div></td><td>Taking false branch</td><td><div class="PathNav"><a href="#Path12" title="Next event (12)">&#x2192;</a></div></td></tr></table></div></td></tr>
 <tr class="codeline" data-linenumber="2945"><td class="num" id="LN2945">2945</td><td class="line">    <span class='keyword'>return</span> <span class='macro'>OK<span class='macro_popup'>1</span></span>;</td></tr>
 <tr class="codeline" data-linenumber="2946"><td class="num" id="LN2946">2946</td><td class="line">  }</td></tr>
 <tr class="codeline" data-linenumber="2947"><td class="num" id="LN2947">2947</td><td class="line"> </td></tr>
-<tr class="codeline" data-linenumber="2948"><td class="num" id="LN2948">2948</td><td class="line">  <span class='keyword'>if</span> (lp-&gt;ll_tv == <span class='macro'>NULL<span class='macro_popup'>((void*)0)</span></span>) {</td></tr>
-<tr class="codeline" data-linenumber="2949"><td class="num" id="LN2949">2949</td><td class="line">    <span class='keyword'>if</span> (*lp-&gt;ll_name == '$') {</td></tr>
+<tr class="codeline" data-linenumber="2948"><td class="num" id="LN2948">2948</td><td class="line">  <span class='keyword'>if</span> (lp-&gt;<span class='variable'>ll_tv<table class='variable_popup'><tbody><tr><td valign='top'><div class='PathIndex PathIndexPopUp'>11.1</div></td><td>Field 'll_tv' is equal to NULL</td></tr></tbody></table></span> == <span class='macro'>NULL<span class='macro_popup'>((void*)0)</span></span>) {</td></tr>
+<tr><td class="num"></td><td class="line"><div id="Path12" class="msg msgControl" style="margin-left:3ex"><table class="msgT"><tr><td valign="top"><div class="PathIndex PathIndexControl">12</div></td><td><div class="PathNav"><a href="#Path11" title="Previous event (11)">&#x2190;</a></div></td><td>Taking true branch</td><td><div class="PathNav"><a href="#Path13" title="Next event (13)">&#x2192;</a></div></td></tr></table></div></td></tr>
+<tr class="codeline" data-linenumber="2949"><td class="num" id="LN2949">2949</td><td class="line">    <span class='keyword'>if</span> (<span class="mrange">*lp-&gt;ll_name == '$') {</td></tr></span>
+<tr><td class="num"></td><td class="line"><div id="Path13" class="msg msgEvent" style="margin-left:9ex"><table class="msgT"><tr><td valign="top"><div class="PathIndex PathIndexEvent">13</div></td><td><div class="PathNav"><a href="#Path12" title="Previous event (12)">&#x2190;</a></div></td><td>Assuming the condition is false</td><td><div class="PathNav"><a href="#Path14" title="Next event (14)">&#x2192;</a></div></td></tr></table></div></td></tr>
+<tr><td class="num"></td><td class="line"><div id="Path14" class="msg msgControl" style="margin-left:5ex"><table class="msgT"><tr><td valign="top"><div class="PathIndex PathIndexControl">14</div></td><td><div class="PathNav"><a href="#Path13" title="Previous event (13)">&#x2190;</a></div></td><td>Taking false branch</td><td><div class="PathNav"><a href="#EndPath" title="Next event (15)">&#x2192;</a></div></td></tr></table></div></td></tr>
 <tr class="codeline" data-linenumber="2950"><td class="num" id="LN2950">2950</td><td class="line">      <span class='macro'>EMSG2(_(e_lock_unlock), lp-&gt;ll_name)<span class='macro_popup'>emsgf((const char *) (gettext((char *)(e_lock_unlock))), (lp-&gt;<br>ll_name))</span></span>;</td></tr>
 <tr class="codeline" data-linenumber="2951"><td class="num" id="LN2951">2951</td><td class="line">      ret = <span class='macro'>FAIL<span class='macro_popup'>0</span></span>;</td></tr>
 <tr class="codeline" data-linenumber="2952"><td class="num" id="LN2952">2952</td><td class="line">    } <span class='keyword'>else</span> {</td></tr>
 <tr class="codeline" data-linenumber="2953"><td class="num" id="LN2953">2953</td><td class="line">      <span class='comment'>// Normal name or expanded name.</span></td></tr>
 <tr class="codeline" data-linenumber="2954"><td class="num" id="LN2954">2954</td><td class="line">      dictitem_T *<span class='keyword'>const</span> di = find_var(</td></tr>
-<tr class="codeline" data-linenumber="2955"><td class="num" id="LN2955">2955</td><td class="line">          (<span class='keyword'>const</span> <span class='keyword'>char</span> *)lp-&gt;ll_name, lp-&gt;ll_name_len, <span class='macro'>NULL<span class='macro_popup'>((void*)0)</span></span>,</td></tr>
+<tr><td class="num"></td><td class="line"><div id="EndPath" class="msg msgEvent" style="margin-left:30ex"><table class="msgT"><tr><td valign="top"><div class="PathIndex PathIndexEvent">15</div></td><td><div class="PathNav"><a href="#Path14" title="Previous event (14)">&#x2190;</a></div></td><td>2nd function call argument is an uninitialized value</td></tr></table></div></td></tr>
+<tr class="codeline" data-linenumber="2955"><td class="num" id="LN2955">2955</td><td class="line">          (<span class='keyword'>const</span> <span class='keyword'>char</span> *)lp-&gt;ll_name, <span class="mrange">lp-&gt;ll_name_len</span>, <span class='macro'>NULL<span class='macro_popup'>((void*)0)</span></span>,</td></tr>
 <tr class="codeline" data-linenumber="2956"><td class="num" id="LN2956">2956</td><td class="line">          <span class='macro'>true<span class='macro_popup'>1</span></span>);</td></tr>
 <tr class="codeline" data-linenumber="2957"><td class="num" id="LN2957">2957</td><td class="line">      <span class='keyword'>if</span> (di == <span class='macro'>NULL<span class='macro_popup'>((void*)0)</span></span>) {</td></tr>
 <tr class="codeline" data-linenumber="2958"><td class="num" id="LN2958">2958</td><td class="line">        ret = <span class='macro'>FAIL<span class='macro_popup'>0</span></span>;</td></tr>
@@ -7530,24 +7545,18 @@ window.addEventListener("keydown", function (event) {
 <tr class="codeline" data-linenumber="7185"><td class="num" id="LN7185">7185</td><td class="line">{</td></tr>
 <tr class="codeline" data-linenumber="7186"><td class="num" id="LN7186">7186</td><td class="line">  <span class='keyword'>int</span> r = <span class='macro'>OK<span class='macro_popup'>1</span></span>;</td></tr>
 <tr class="codeline" data-linenumber="7187"><td class="num" id="LN7187">7187</td><td class="line"> </td></tr>
-<tr class="codeline" data-linenumber="7188"><td class="num" id="LN7188">7188</td><td class="line">  <span class='keyword'>if</span> (<span class="mrange">arg-&gt;v_type == VAR_PARTIAL</span> &amp;&amp; arg-&gt;vval.v_partial != <span class='macro'>NULL<span class='macro_popup'>((void*)0)</span></span>) {</td></tr>
-<tr><td class="num"></td><td class="line"><div id="Path1" class="msg msgEvent" style="margin-left:7ex"><table class="msgT"><tr><td valign="top"><div class="PathIndex PathIndexEvent">1</div></td><td>Assuming field 'v_type' is not equal to VAR_PARTIAL</td><td><div class="PathNav"><a href="#Path2" title="Next event (2)">&#x2192;</a></div></td></tr></table></div></td></tr>
+<tr class="codeline" data-linenumber="7188"><td class="num" id="LN7188">7188</td><td class="line">  <span class='keyword'>if</span> (arg-&gt;v_type == VAR_PARTIAL &amp;&amp; arg-&gt;vval.v_partial != <span class='macro'>NULL<span class='macro_popup'>((void*)0)</span></span>) {</td></tr>
 <tr class="codeline" data-linenumber="7189"><td class="num" id="LN7189">7189</td><td class="line">    callback-&gt;data.partial = arg-&gt;vval.v_partial;</td></tr>
 <tr class="codeline" data-linenumber="7190"><td class="num" id="LN7190">7190</td><td class="line">    callback-&gt;data.partial-&gt;pt_refcount++;</td></tr>
 <tr class="codeline" data-linenumber="7191"><td class="num" id="LN7191">7191</td><td class="line">    callback-&gt;type = kCallbackPartial;</td></tr>
-<tr class="codeline" data-linenumber="7192"><td class="num" id="LN7192">7192</td><td class="line">  } <span class='keyword'>else</span> <span class='keyword'>if</span> (<span class="mrange">arg-&gt;v_type == VAR_STRING</td></tr></span>
-<tr><td class="num"></td><td class="line"><div id="Path2" class="msg msgEvent" style="margin-left:14ex"><table class="msgT"><tr><td valign="top"><div class="PathIndex PathIndexEvent">2</div></td><td><div class="PathNav"><a href="#Path1" title="Previous event (1)">&#x2190;</a></div></td><td>Assuming field 'v_type' is equal to VAR_STRING</td><td><div class="PathNav"><a href="#Path3" title="Next event (3)">&#x2192;</a></div></td></tr></table></div></td></tr>
-<tr class="codeline" data-linenumber="7193"><td class="num" id="LN7193">7193</td><td class="line">             &amp;&amp; <span class="mrange">arg-&gt;vval.v_string != <span class='macro'>NULL<span class='macro_popup'>((void*)0)</span></span></td></tr></span>
-<tr><td class="num"></td><td class="line"><div id="Path3" class="msg msgEvent" style="margin-left:17ex"><table class="msgT"><tr><td valign="top"><div class="PathIndex PathIndexEvent">3</div></td><td><div class="PathNav"><a href="#Path2" title="Previous event (2)">&#x2190;</a></div></td><td>Assuming field 'v_string' is equal to NULL</td><td><div class="PathNav"><a href="#Path4" title="Next event (4)">&#x2192;</a></div></td></tr></table></div></td></tr>
+<tr class="codeline" data-linenumber="7192"><td class="num" id="LN7192">7192</td><td class="line">  } <span class='keyword'>else</span> <span class='keyword'>if</span> (arg-&gt;v_type == VAR_STRING</td></tr>
+<tr class="codeline" data-linenumber="7193"><td class="num" id="LN7193">7193</td><td class="line">             &amp;&amp; arg-&gt;vval.v_string != <span class='macro'>NULL<span class='macro_popup'>((void*)0)</span></span></td></tr>
 <tr class="codeline" data-linenumber="7194"><td class="num" id="LN7194">7194</td><td class="line">             &amp;&amp; ascii_isdigit(*arg-&gt;vval.v_string)) {</td></tr>
 <tr class="codeline" data-linenumber="7195"><td class="num" id="LN7195">7195</td><td class="line">    r = <span class='macro'>FAIL<span class='macro_popup'>0</span></span>;</td></tr>
-<tr class="codeline" data-linenumber="7196"><td class="num" id="LN7196">7196</td><td class="line">  } <span class='keyword'>else</span> <span class='keyword'>if</span> (arg-&gt;<span class='variable'>v_type<table class='variable_popup'><tbody><tr><td valign='top'><div class='PathIndex PathIndexPopUp'>3.1</div></td><td>Field 'v_type' is not equal to VAR_FUNC</td></tr></tbody></table></span> == VAR_FUNC || arg-&gt;<span class='variable'>v_type<table class='variable_popup'><tbody><tr><td valign='top'><div class='PathIndex PathIndexPopUp'>3.2</div></td><td>Field 'v_type' is equal to VAR_STRING</td></tr></tbody></table></span> == VAR_STRING) {</td></tr>
-<tr><td class="num"></td><td class="line"><div id="Path4" class="msg msgControl" style="margin-left:10ex"><table class="msgT"><tr><td valign="top"><div class="PathIndex PathIndexControl">4</div></td><td><div class="PathNav"><a href="#Path3" title="Previous event (3)">&#x2190;</a></div></td><td>Taking true branch</td><td><div class="PathNav"><a href="#Path5" title="Next event (5)">&#x2192;</a></div></td></tr></table></div></td></tr>
-<tr class="codeline" data-linenumber="7197"><td class="num" id="LN7197">7197</td><td class="line">    <span class="mrange">char_u *name</span> = arg-&gt;vval.v_string;</td></tr>
-<tr><td class="num"></td><td class="line"><div id="Path5" class="msg msgEvent" style="margin-left:5ex"><table class="msgT"><tr><td valign="top"><div class="PathIndex PathIndexEvent">5</div></td><td><div class="PathNav"><a href="#Path4" title="Previous event (4)">&#x2190;</a></div></td><td>'name' initialized to a null pointer value</td><td><div class="PathNav"><a href="#EndPath" title="Next event (6)">&#x2192;</a></div></td></tr></table></div></td></tr>
+<tr class="codeline" data-linenumber="7196"><td class="num" id="LN7196">7196</td><td class="line">  } <span class='keyword'>else</span> <span class='keyword'>if</span> (arg-&gt;v_type == VAR_FUNC || arg-&gt;v_type == VAR_STRING) {</td></tr>
+<tr class="codeline" data-linenumber="7197"><td class="num" id="LN7197">7197</td><td class="line">    char_u *name = arg-&gt;vval.v_string;</td></tr>
 <tr class="codeline" data-linenumber="7198"><td class="num" id="LN7198">7198</td><td class="line">    func_ref(name);</td></tr>
-<tr class="codeline" data-linenumber="7199"><td class="num" id="LN7199">7199</td><td class="line">    callback-&gt;data.funcref = vim_strsave(<span class="mrange">name</span>);</td></tr>
-<tr><td class="num"></td><td class="line"><div id="EndPath" class="msg msgEvent" style="margin-left:30ex"><table class="msgT"><tr><td valign="top"><div class="PathIndex PathIndexEvent">6</div></td><td><div class="PathNav"><a href="#Path5" title="Previous event (5)">&#x2190;</a></div></td><td>Null pointer passed to 1st parameter expecting 'nonnull'</td></tr></table></div></td></tr>
+<tr class="codeline" data-linenumber="7199"><td class="num" id="LN7199">7199</td><td class="line">    callback-&gt;data.funcref = vim_strsave(name);</td></tr>
 <tr class="codeline" data-linenumber="7200"><td class="num" id="LN7200">7200</td><td class="line">    callback-&gt;type = kCallbackFuncref;</td></tr>
 <tr class="codeline" data-linenumber="7201"><td class="num" id="LN7201">7201</td><td class="line">  } <span class='keyword'>else</span> <span class='keyword'>if</span> (nlua_is_table_from_lua(arg)) {</td></tr>
 <tr class="codeline" data-linenumber="7202"><td class="num" id="LN7202">7202</td><td class="line">    char_u *name = nlua_register_table_as_callable(arg);</td></tr>
