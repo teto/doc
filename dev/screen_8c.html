@@ -208,8 +208,8 @@ Functions</h2></td></tr>
 <tr class="separator:aa3d948959700256c8d071c6b77e7d1c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aece0e15e9ac24651034b4d4e7225414d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="screen_8c.html#aece0e15e9ac24651034b4d4e7225414d">win_signcol_width</a> (<a class="el" href="buffer__defs_8h.html#a2d63c71f6ff363aaf63acb8c01f18066">win_T</a> *wp)</td></tr>
 <tr class="separator:aece0e15e9ac24651034b4d4e7225414d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacf59aa52e53629f469f162bcb201287"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pty__conpty__win_8h.html#a690727517acf82fb8c93ad801e3ca4e3">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="screen_8c.html#aacf59aa52e53629f469f162bcb201287">draw_virt_text</a> (<a class="el" href="buffer__defs_8h.html#aa01338a8366285f2e0afc18a70f7614f">buf_T</a> *<a class="el" href="tag_8c.html#aaaf5379ca5750ed4ef26a247cca0103c">buf</a>, int *end_col, int max_col)</td></tr>
-<tr class="separator:aacf59aa52e53629f469f162bcb201287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace2b65f1fae56243b8a9fed019c98f27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pty__conpty__win_8h.html#a690727517acf82fb8c93ad801e3ca4e3">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="screen_8c.html#ace2b65f1fae56243b8a9fed019c98f27">draw_virt_text</a> (<a class="el" href="buffer__defs_8h.html#aa01338a8366285f2e0afc18a70f7614f">buf_T</a> *<a class="el" href="tag_8c.html#aaaf5379ca5750ed4ef26a247cca0103c">buf</a>, int col_off, int *end_col, int max_col)</td></tr>
+<tr class="separator:ace2b65f1fae56243b8a9fed019c98f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ddffd96add6293d28fa6c90cd8c06cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pty__conpty__win_8h.html#a690727517acf82fb8c93ad801e3ca4e3">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="screen_8c.html#a1ddffd96add6293d28fa6c90cd8c06cd">screen_adjust_grid</a> (<a class="el" href="structScreenGrid.html">ScreenGrid</a> **grid, int *row_off, int *col_off)</td></tr>
 <tr class="separator:a1ddffd96add6293d28fa6c90cd8c06cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9bd143450271431de376bc3aa28bcb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pty__conpty__win_8h.html#a690727517acf82fb8c93ad801e3ca4e3">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="screen_8c.html#aa9bd143450271431de376bc3aa28bcb8">rl_mirror</a> (<a class="el" href="types_8h.html#abdb7824437f4665a51798757139f570b">char_u</a> *str)</td></tr>
@@ -756,8 +756,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aacf59aa52e53629f469f162bcb201287"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacf59aa52e53629f469f162bcb201287">&#9670;&nbsp;</a></span>draw_virt_text()</h2>
+<a id="ace2b65f1fae56243b8a9fed019c98f27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace2b65f1fae56243b8a9fed019c98f27">&#9670;&nbsp;</a></span>draw_virt_text()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -767,6 +767,12 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="buffer__defs_8h.html#aa01338a8366285f2e0afc18a70f7614f">buf_T</a> *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>col_off</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2458,7 +2464,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <footer>
   <div class="container">
-    Generated on Sat May 1 2021 05:45:13 for Neovim by
+    Generated on Sun May 2 2021 05:42:06 for Neovim by
     <a href="http://www.doxygen.org/index.html">Doxygen</a>
     1.8.17
   </div>

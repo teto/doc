@@ -114,7 +114,9 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a92f508e4f008242f15777d27184ae5c6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decoration_8h.html#a92f508e4f008242f15777d27184ae5c6">VirtTextPos</a> { <a class="el" href="decoration_8h.html#a92f508e4f008242f15777d27184ae5c6a268801e20eb3555c46f26d207d885811">kVTEndOfLine</a>, 
-<a class="el" href="decoration_8h.html#a92f508e4f008242f15777d27184ae5c6aa36167047014b98fec07ab6a2d4dcd0c">kVTOverlay</a>
+<a class="el" href="decoration_8h.html#a92f508e4f008242f15777d27184ae5c6aa36167047014b98fec07ab6a2d4dcd0c">kVTOverlay</a>, 
+<a class="el" href="decoration_8h.html#a92f508e4f008242f15777d27184ae5c6ac6fd57be3d3be4fcd1770d1167fad8b3">kVTWinCol</a>, 
+<a class="el" href="decoration_8h.html#a92f508e4f008242f15777d27184ae5c6aa0302a36b5175492d3e489a65957a9d5">kVTRightAlign</a>
  }</td></tr>
 <tr class="separator:a92f508e4f008242f15777d27184ae5c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6354801f26407d5c36842b81234c0f5d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decoration_8h.html#a6354801f26407d5c36842b81234c0f5d">HlMode</a> { <a class="el" href="decoration_8h.html#a6354801f26407d5c36842b81234c0f5dab5463ffd27961792b395cd725e7858bc">kHlModeUnknown</a>, 
@@ -160,7 +162,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">                          { 0, <a class="code" href="kvec_8h.html#af1e62fb841458516a827138ece7bc15e">KV_INITIAL_VALUE</a>, <a class="code" href="decoration_8h.html#a92f508e4f008242f15777d27184ae5c6a268801e20eb3555c46f26d207d885811">kVTEndOfLine</a>, <span class="keyword">false</span>, \</div>
-<div class="line">                          kHlModeUnknown, <span class="keyword">false</span>, <a class="code" href="decoration_8h.html#a911983a4a7404949905892667beb5fd1">DECOR_PRIORITY_BASE</a>, <span class="keyword">false</span> }</div>
+<div class="line">                          kHlModeUnknown, <span class="keyword">false</span>, <a class="code" href="decoration_8h.html#a911983a4a7404949905892667beb5fd1">DECOR_PRIORITY_BASE</a>, <span class="keyword">false</span>, 0 }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -250,6 +252,8 @@ Functions</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a92f508e4f008242f15777d27184ae5c6a268801e20eb3555c46f26d207d885811"></a>kVTEndOfLine&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a92f508e4f008242f15777d27184ae5c6aa36167047014b98fec07ab6a2d4dcd0c"></a>kVTOverlay&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a92f508e4f008242f15777d27184ae5c6ac6fd57be3d3be4fcd1770d1167fad8b3"></a>kVTWinCol&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a92f508e4f008242f15777d27184ae5c6aa0302a36b5175492d3e489a65957a9d5"></a>kVTRightAlign&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -312,12 +316,12 @@ Functions</h2></td></tr>
 <div class="ttc" id="adecoration_8h_html_a92f508e4f008242f15777d27184ae5c6a268801e20eb3555c46f26d207d885811"><div class="ttname"><a href="decoration_8h.html#a92f508e4f008242f15777d27184ae5c6a268801e20eb3555c46f26d207d885811">kVTEndOfLine</a></div><div class="ttdeci">@ kVTEndOfLine</div><div class="ttdef"><b>Definition:</b> decoration.h:22</div></div>
 <div class="ttc" id="akvec_8h_html_af1e62fb841458516a827138ece7bc15e"><div class="ttname"><a href="kvec_8h.html#af1e62fb841458516a827138ece7bc15e">KV_INITIAL_VALUE</a></div><div class="ttdeci">#define KV_INITIAL_VALUE</div><div class="ttdef"><b>Definition:</b> kvec.h:51</div></div>
 <div class="ttc" id="adecoration_8h_html_a911983a4a7404949905892667beb5fd1"><div class="ttname"><a href="decoration_8h.html#a911983a4a7404949905892667beb5fd1">DECOR_PRIORITY_BASE</a></div><div class="ttdeci">#define DECOR_PRIORITY_BASE</div><div class="ttdef"><b>Definition:</b> decoration.h:19</div></div>
-<div class="ttc" id="astructDecorProvider_html"><div class="ttname"><a href="structDecorProvider.html">DecorProvider</a></div><div class="ttdef"><b>Definition:</b> decoration.h:70</div></div>
+<div class="ttc" id="astructDecorProvider_html"><div class="ttname"><a href="structDecorProvider.html">DecorProvider</a></div><div class="ttdef"><b>Definition:</b> decoration.h:73</div></div>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <footer>
   <div class="container">
-    Generated on Sat May 1 2021 05:45:12 for Neovim by
+    Generated on Sun May 2 2021 05:42:05 for Neovim by
     <a href="http://www.doxygen.org/index.html">Doxygen</a>
     1.8.17
   </div>

@@ -1420,8 +1420,10 @@ Functions</h2></td></tr>
 <li>virt_text_pos : positioning of virtual text. Possible values:<ul>
 <li>"eol": right after eol character (default)</li>
 <li>"overlay": display over the specified column, without shifting the underlying text.</li>
+<li>"right_align": display right aligned in the window.</li>
 </ul>
 </li>
+<li>virt_text_win_col : position the virtual text at a fixed window column (starting from the first text column)</li>
 <li>virt_text_hide : hide the virtual text when the background text is selected or hidden due to horizontal scroll 'nowrap'</li>
 <li>hl_mode : control how highlights are combined with the highlights of the text. Currently only affects virt_text highlights, but might affect <code><a class="el" href="structhl__group.html">hl_group</a></code> in later versions.<ul>
 <li>"replace": only show the virt_text color. This is the default</li>
@@ -1883,7 +1885,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <footer>
   <div class="container">
-    Generated on Sat May 1 2021 05:45:12 for Neovim by
+    Generated on Sun May 2 2021 05:42:05 for Neovim by
     <a href="http://www.doxygen.org/index.html">Doxygen</a>
     1.8.17
   </div>
